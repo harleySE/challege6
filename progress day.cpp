@@ -7,11 +7,9 @@ int main() {
   cout<<"enter 5 times"<<endl;
   cin>>d>>e>>f>>g>>h;
   int arr[]={d,e,f,g,h};
-  int a=arr[0];
   int arrSize=sizeof(arr)/sizeof(arr[0]);
   for(int i=0; i<arrSize; i++){
-    if(arr[i]<a){
-      a=arr[i];
+    if(arr[i]<arr[i-1]){
       pd+=1;
     }
   }
